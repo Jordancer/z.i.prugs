@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html,
 body {
-  height: 100%;
-  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
 }
 
 /* Navigation */
@@ -22,7 +27,7 @@ nav {
   top: 0px;
   list-style-type: none;
   margin: 0;
-  padding: 20px;
+  padding: 0px;
   overflow: hidden;
   background: transparent;
 }
@@ -79,15 +84,92 @@ nav {
 .title {
   text-align: center;
 }
+/*-----------------------------Slider------------------------------------------*/
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 5%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 600px;
+
+  color: rgb(255, 255, 255);
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(300px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+/* Backgorund Images */
+
+.slide:first-child {
+  background: url("imgs/rug-10.jpeg") no-repeat;
+  filter: brightness(50%);
+}
+.slide:nth-child(2) {
+  background: url("imgs/rug-11.jpeg") no-repeat;
+  filter: brightness(50%);
+}
+.slide:nth-child(3) {
+  background: url("imgs/rug-12.jpeg") no-repeat;
+  filter: brightness(50%);
+}
 
 /*-----------------------------Contact Form------------------------------------------*/
 
-body {
-  padding: 1rem;
-}
-
 main {
-  max-width: 1170px;
+  max-width: 1325px;
+  max-height: 1325px;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
@@ -180,6 +262,40 @@ button:hover,
 button:focus {
   background: gold;
   outline: 0;
+}
+
+/*--------------------------Footer----------------------------------------------*/
+
+.facebook .twitter,
+.instagram {
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.facebook {
+  text-decoration: none;
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  text-decoration: none;
+  background: #00acee;
+  color: white;
+}
+
+.instagram {
+  text-decoration: none;
+  background: #c41200;
+  color: white;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
 }
 
 /*---------------------Media Quiries---------------------------------------------------*/

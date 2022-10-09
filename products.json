@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "image": "imgs/rug-1.jpeg",
+    "name": "Bart Simpson",
+    "price": "$25",
+    "description": "A Custom \"Choked Out\" Bart Rug"
+  },
+  {
+    "id": 2,
+    "image": "imgs/rug-2.jpeg",
+    "name": "Chanel Rug",
+    "price": "$20",
+    "description": "Custom Drippy Chanel Logo"
+  },
+  {
+    "id": 3,
+    "image": "imgs/rug-3.jpeg",
+    "name": "LA Rug",
+    "price": "$25",
+    "description": "A Custom LA Logo Rug In A Lakers Colorway"
+  },
+  {
+    "id": 4,
+    "image": "imgs/rug-4.jpeg",
+    "name": "Cherry",
+    "price": "$20",
+    "description": "Just Plain Ol Cherries"
+  },
+  {
+    "id": 5,
+    "image": "imgs/rug-5.jpeg",
+    "name": "Skull Rug",
+    "price": "$25",
+    "description": "A Cartoonized Skull"
+  },
+  {
+    "id": 6,
+    "image": "imgs/rug-6.jpeg",
+    "name": "Hip Hop Legends Rug",
+    "price": "650.00",
+    "description": "A Large Rug Of Hip-Hop Biggest Artists & Originators"
+  },
+  {
+    "id": 7,
+    "image": "imgs/rug-7.webp",
+    "name": "Flaming Skull",
+    "price": "$50",
+    "description": "A Skull On Fire,Not Much To Describe lol"
+  },
+  {
+    "id": 8,
+    "image": "imgs/rug-8.jpeg",
+    "name": "The World Is Yours Rug",
+    "price": "$40",
+    "description": "A Rug Of The World With The Words \"The World Is Yours\""
+  },
+  {
+    "id": 9,
+    "image": "imgs/rug-9.jpeg",
+    "name": "Squritle Lunch Rug",
+    "price": "$60",
+    "description": "Just A Bunch Of Squrtles Enjoyinh Lunchtime"
+  },
+  {
+    "id": 10,
+    "image": "imgs/rug-10.jpeg",
+    "name": "Rock Lee Rug",
+    "price": "$75",
+    "description": "A Rug Of One Of Narutos Friends, Rock Lee!!!"
+  },
+  {
+    "id": 11,
+    "image": "imgs/rug-11.jpeg",
+    "name": "Wavy Gabby",
+    "price": "$60",
+    "description": "Wavy Gabby From The Simpsons"
+  },
+  {
+    "id": 12,
+    "image": "imgs/rug-12.jpeg",
+    "name": "Kakashi Rug",
+    "price": "$80",
+    "description": "Narutos First Teacher, Kakashi Hatake"
+  }
+]
