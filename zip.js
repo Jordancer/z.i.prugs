@@ -1,3 +1,4 @@
+// Full Screen Nav
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
@@ -5,7 +6,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
-
+// NavBar Changes Collors When Yo Scroll About 50px
 window.onscroll = function () {
   navColorCange();
 };
@@ -18,6 +19,7 @@ function navColorCange() {
   }
 }
 
+// ----------------------------------Slider---------------------------------//
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
@@ -25,6 +27,7 @@ const auto = true; // Auto scroll
 const intervalTime = 5500;
 let slideInterval;
 
+// Java That Checks The Current slide And Replaces It With The Next
 const nextSlide = () => {
   // Get current class
   const current = document.querySelector(".current");
@@ -40,6 +43,7 @@ const nextSlide = () => {
   }
   setTimeout(() => current.classList.remove("current"));
 };
+// Java That Checks The Current slide And Replaces It With The Revious
 
 const prevSlide = () => {
   // Get current class
@@ -56,6 +60,10 @@ const prevSlide = () => {
   }
   setTimeout(() => current.classList.remove("current"));
 };
+// Auto slide   // Run Next Slide
+if (auto) {
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
 
 // Button events
 next.addEventListener("click", (e) => {
@@ -73,11 +81,3 @@ prev.addEventListener("click", (e) => {
     slideInterval = setInterval(nextSlide, intervalTime);
   }
 });
-
-// Auto slide
-if (auto) {
-  // Run next slide at interval time
-  slideInterval = setInterval(nextSlide, intervalTime);
-}
-
-// // ---------------------------Products------------------------------//

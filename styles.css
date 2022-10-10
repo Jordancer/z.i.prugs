@@ -1,6 +1,9 @@
 /* Navigation */
+body {
+  background-color: #ffe7c7;
+}
 .navChange {
-  background-color: aqua;
+  background-color: #3e2723;
 }
 
 nav {
@@ -15,6 +18,10 @@ nav {
   padding: 0px;
   overflow: hidden;
   background: transparent;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
 }
 
 .inBurger {
@@ -69,11 +76,11 @@ nav {
 .title {
   text-align: center;
 }
-
+/* Products Page */
 body {
   font-family: sans-serif;
   min-height: 100vh;
-  color: #555;
+  color: rgb(0, 0, 0);
 }
 
 table {
@@ -83,7 +90,7 @@ table {
 
 table th {
   padding: 10px 0;
-  background-color: #ffffff;
+  background-color: #ffe7c7;
   /* background-color: #fff; */
   border: transparent;
 }
@@ -93,7 +100,7 @@ table td {
   border: transparent;
   width: 25%;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffe7c7;
 }
 
 table img {
@@ -159,5 +166,5 @@ table img {
 footer {
   position: relative;
   text-align: center;
-  background-color: rgb(0, 0, 0);
+  background-color: #3e2723;
 }

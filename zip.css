@@ -8,14 +8,17 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: rgb(255, 255, 255);
+  background: #ffe7c7;
   color: rgb(0, 0, 0);
   line-height: 1.6;
 }
 
 /* Navigation */
 .navChange {
-  background-color: aqua;
+  background-color: #3e2723;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -111,12 +114,10 @@ nav {
 
 .slide .content {
   position: absolute;
-  position: absolute;
   transform: translate(-50%, -50%);
   opacity: 0;
   width: 600px;
-
-  color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .slide.current .content {
@@ -134,35 +135,23 @@ nav {
 }
 
 .buttons button:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-@media (max-width: 500px) {
-  .slide .content {
-    bottom: -300px;
-    left: 0;
-    width: 100%;
-  }
-
-  .slide.current .content {
-    transform: translateY(-300px);
-  }
+  background-color: #3e2723;
+  color: #3e2723;
 }
 
 /* Backgorund Images */
 
 .slide:first-child {
   background: url("imgs/rug-10.jpeg") no-repeat;
-  filter: brightness(50%);
+  filter: brightness(80%);
 }
 .slide:nth-child(2) {
   background: url("imgs/rug-11.jpeg") no-repeat;
-  filter: brightness(50%);
+  filter: brightness(80%);
 }
 .slide:nth-child(3) {
   background: url("imgs/rug-12.jpeg") no-repeat;
-  filter: brightness(50%);
+  filter: brightness(80%);
 }
 
 /*-----------------------------Contact Form------------------------------------------*/
@@ -223,7 +212,7 @@ ul {
 }
 
 .contacts {
-  background: #4b5195;
+  background: #3e2723;
   color: #fff;
 }
 
@@ -254,13 +243,14 @@ textarea {
 }
 
 button {
-  background: lightgrey;
+  background: #ffe7c7;
   width: 100%;
   border: 0;
+  text-decoration-color: #3b5998;
 }
 button:hover,
 button:focus {
-  background: gold;
+  background: #3e2723;
   outline: 0;
 }
 
@@ -307,6 +297,16 @@ footer {
 }
 
 @media screen and (max-height: 736px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+
   .inBurger {
     text-align: left;
   }
